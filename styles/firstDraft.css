@@ -231,6 +231,18 @@ section {
     color: black;
 }
 
+
+
+/* For UL navigation */
+
+.navlinks li {
+    list-style: none;
+    float: left;
+}
+ul.navlinks {
+    margin: 0px;
+    }
+
 /* for Sticky    */
 
 #navbar {
