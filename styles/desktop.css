@@ -34,16 +34,22 @@ body {
     height:80vh;
     overflow: hidden;
 }
+/* -------Video ------- */
 #myVideo {
     display:initial;
     object-fit: cover; /* -- This is problematic...must change  -- */
     width: 100%;
     height: 100%;
 }
-
+.videoLogo1{
+    display:initial;
+}
 /*--------------------------------------------------------------
 3.0 - Logo & Navigation
 --------------------------------------------------------------*/
+.mobileLogo {
+    display: none;
+    }
 .nav_Mobile {
     display: none; /* -- Remove Desktop nav  -- */
 }
@@ -52,8 +58,13 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-
-
+img.menuImg {
+    display: initial;
+}
+.topnav {
+    -webkit-box-shadow: 0 1px 8px rgba(0,0,0,.3);
+    box-shadow: 0 1px 8px rgba(0,0,0,.3);
+}
 /*--------------------------------------------------------------
 FROM NEW CSS GRID
 --------------------------------------------------------------*/

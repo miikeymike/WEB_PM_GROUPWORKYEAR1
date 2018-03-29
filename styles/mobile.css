@@ -26,23 +26,57 @@ gitHub: https://github.com/miikeymike/WEB_PM_GROUPWORKYEAR1.git
 
 --------------------------------------------------------------*/
 
+/* -------For Search ------- */
+.mobileSearch {
+    text-align: center;
+    }
+.searchContainer {
+    display: inline-flex;
+    flex: 1 1 300px;
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.searchIcon {
+    padding: 0.5rem;
+}
+
+.searchBox {
+    border: 0;
+    padding: 0.5rem 0.5rem 0.5rem 0;
+    flex: 1; /* WTF DOES FLEX DO????? MIGHT REMOVE IT */
+    text-align: center;
+}
+
+.searchButton {
+    background: #538AC5;
+    border: 0;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0;
+}
+
+
 /* -------Video ------- */
 #myVideo,
 .videoLogo1{
     display:none;
 }
 
+
 .mobileLogo {
     position: relative;
-    width: 300px;
-    height: 110px;
+    padding: 0px 0px 20px 0px;
     }
+img.menuImg {
+    display: none;
+}
 
 .topnav {
     overflow: hidden;
     background-color: #fff;
-    -webkit-box-shadow: 0 1px 8px rgba(0,0,0,.3);
-    box-shadow: 0 1px 8px rgba(0,0,0,.3);
 }
 
 .topnav a {
@@ -131,7 +165,8 @@ img.menuImg {
 body {
     margin: 0px;
     padding: 0px;
-    background-color: #ff7f00;
+    /*background-color: #ff7f00; Green to test if breakpoint works*/
+    background-color: #fff;
 }
 
 div#wrapper {
@@ -148,7 +183,7 @@ div#wrapper {
     height:40px;
 }
 
-.videoLogo_1{                /*temporary remove*/
+.videoLogo1{                /*temporary remove*/
     position: absolute;
     top: 35%;
     transform: translateY(-60%);
@@ -187,7 +222,8 @@ and the tablet.css file should be pulled.
 
 @media screen and (max-width: 450px) {
     body {
-        background-color: lightgreen;
+        /* background-color: lightgreen; To test if breakpoint works */
+        background-color: #fff;
     }
 
     .nav_Desktop {

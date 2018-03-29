@@ -36,19 +36,30 @@ body {
 /* -------Video ------- */
 #myVideo {
     display:initial;
+    }
+.videoLogo1{
+    display:initial;
 }
-
 
 /*--------------------------------------------------------------
 3.0 - Logo & Navigation
 --------------------------------------------------------------*/
-.logoBirdy {
-    width:30%;
-}
+
+.mobileLogo {
+    display: none;
+    }
 .logoImage {
     width: 70%;
     max-width: 614px;
     float: left;
     position: absolute;
     margin-left: -5%;
+}
+img.menuImg {
+    display: initial;
+}
+
+.topnav {
+    -webkit-box-shadow: 0 1px 8px rgba(0,0,0,.3);
+    box-shadow: 0 1px 8px rgba(0,0,0,.3);
 }
