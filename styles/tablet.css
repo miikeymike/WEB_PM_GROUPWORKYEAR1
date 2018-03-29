@@ -1,0 +1,54 @@
+/*--------------------------------------------------------------
+Bcs (Hons) Web Production
+Web Project Management ICA
+
+Description:
+This website is for the ICA group website product
+
+Group Members
+Michael Watterston
+Simon Dean
+Liam
+Miles
+
+gitHub: https://github.com/miikeymike/WEB_PM_GROUPWORKYEAR1.git
+
+----------------------------------------------------------------
+>>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 - Testing 123
+
+--------------------------------------------------------------*/
+
+
+
+/*--------------------------------------------------------------
+1.0 - Testing 123
+--------------------------------------------------------------*/
+
+body {
+    background-color: #338440;
+}
+.nav_Desktop {
+    display: none; /* -- Remove Desktop nav  -- */
+}
+
+/* -------Video ------- */
+#myVideo {
+    display:initial;
+}
+
+
+/*--------------------------------------------------------------
+3.0 - Logo & Navigation
+--------------------------------------------------------------*/
+.logoBirdy {
+    width:30%;
+}
+.logoImage {
+    width: 70%;
+    max-width: 614px;
+    float: left;
+    position: absolute;
+    margin-left: -5%;
+}

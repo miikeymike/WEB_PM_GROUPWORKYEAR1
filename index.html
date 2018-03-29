@@ -4,7 +4,7 @@ Bcs (Hons) Web Production
 Web Project Management ICA
 
 Description:
-This website is for your ICA group website product
+This website is for the ICA group website product
 
 Group Members
 Michael Watterston
@@ -12,85 +12,124 @@ Simon Dean
 Liam
 Miles
 
-gitHub Repo: miikeymike/WEB_PM_GROUPWORKYEAR1
+gitHub Repo: https://github.com/miikeymike/WEB_PM_GROUPWORKYEAR1.git
 
 -->
 
 <!DOCTYPE html>
+
 <html>
-
 <head>
-    <title>Hello!</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/reset.css">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-    <link rel="stylesheet" href="styles/firstdraft.css">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <title>DesignWurk | HomePage</title>
+    <meta name="description" content="This is my ICA coursework" />
+    <meta name="author" content="Michael Watterston">
+    <meta name="keywords" content="ICA, Course Work, Part 1">
+
+    <!-- Call Mobile CSS :: this is default -->
+    <link rel="stylesheet" href="styles/mobile.css">
+
+    <!-- Call Tabelet CSS only when user screen is 450 pixels upto 1024px -->
+    <link rel="stylesheet" media="screen and (max-width: 1024px) and (min-width: 450px)" href="styles/tablet.css">
+
+    <!-- Call Desktop CSS only when user screen is 1024 pixels or wider -->
+    <link rel="stylesheet" media="screen and (min-width: 1024px)" href="styles/desktop.css">
+
+    <script src="scripts/main.js" defer></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
 
 <body>
 
-<header>
-    <div class="logo">
-    <img class="mainLogo" class="section-img" src="images/Logo.png" alt="important graph">
-    </div>
-</header>
+<div id="mediaWrapper" >
+    <!-- HTML video for now, might use Jquery BigVideo.js for better cross browser compatibilty -->
 
-<div id="navbar">
-    <img class="navLogo" class="section-img" src="images/Logo.png" alt="important graph">
-    <ul class="navlinks"> <!-- Change this to lists -->
-        <li><a class="active" href="javascript:void(0)">Home</a></li>
-        <li><a href="javascript:void(0)">News</a></li>
-        <li><a href="javascript:void(0)">Contact</a></li>
-    </ul>
+    <video id="myVideo" autoplay muted loop >
+        <source src="video/car_video1.mp4" type="video/mp4" />
+        <!-- <source src=".webmhd.webm" type='video/webm' /> -->
+        <img src="images/designwurk_logo.png" title="Your browser does not support the <video> tag">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <div id="videoLogo" class="videoLogo1">
+        <img class="logoImage" src="images/logo.png" alt="test">
+    </div>
 </div>
 
 
+<div class="topnav" id="myTopnav">
 
-<main>
-    <section>
-        <h2>The Title Test Test Test </h2>
-        <p>Some Text goes here, some text goes here, some text goes here, some text goes here.</p>
-        <a href="#" class="info-link">Learn more...</a>
-    </section>
-    <section>
-        <h2>The Title</h2>
-        <p>Some Text goes here, some text goes here, some text goes here, some text goes here.</p>
-        <img class="section-img" src="https://article.images.consumerreports.org/prod/content/dam/CRO%20Images%202017/Magazine-Articles/April/CR-Inline-top-picks-chevy-cruz-02-17.jpeg" alt="important graph">
-        <a href="#" class="info-link">Learn more...</a>
-    </section>
-    <section>
-        <h2>The Title</h2>
-        <img class="section-img profile" src="https://article.images.consumerreports.org/prod/content/dam/CRO%20Images%202017/Magazine-Articles/April/CR-Inline-top-picks-chevy-cruz-02-17.jpeg" />
-        <p>Some Text goes here, some text goes here, some text goes here, some text goes here.</p>
-        <a href="#" class="info-link">Learn more...</a>
-    </section>
-    <section class="bigbottom">
-        <h2>The Title</h2>
-        <p>Some Text goes here, some text goes here, some text goes here, some text goes here.</p>
-        <a class="bigbottom-link info-link" href="#" class="info-link">Learn more...</a>
-    </section>
-    <section class="bigtitle">
-        <h2 class="bigtitle-title">The Title</h2>
-        <p>Some Text goes here, some text goes here, some text goes here, some text goes here.</p>
-        <a href="#" class="info-link">Learn more...</a>
-    </section>
-    <section>
-        <h2>The Title</h2>
-        <p>Some Text goes here, some text goes here, some text goes here, some text goes here.</p>
-        <a href="#" class="info-link">Learn more...</a>
-    </section>
+    <img class="menuImg" src="images/menu_logo.png" src="#" alt="menu logo">
 
-</main>
-
-<footer>
-    <div id="footerWrapper">
-        Footer Stuff in Here <div id="testBox"></div>
+    <div class="linkMenu">
+        <a href="index.html" class="active">Home</a>
+        <a href="prices.html">Car Search</a>
+        <a href="portfolio.html">Compare Cars</a>
+        <a href="about.html">Promotions</a>
+        <a href="contact.html">About</a>
+        <a href="contact.html">Contact us</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction2()">&#9776;</a>
     </div>
-</footer>
-</body>
 
-<script src="scripts/main.js"></script>
+</div>
+<header>
+    <div class="mobileLogo">
+        <img class="logoImage" src="images/logo.png" alt="test">
+    </div>
+
+    <div class="mobileSearch">Mobile Search</div>
+</header>
+
+<!-- Temporary maybe?? -->
+<div id="wrapper2">
+
+
+    <main>
+        <section>
+            <h2>The Title Test Test Test </h2>
+            <p>Some Text goes here, some text goes here, some text goes here, some text goes here.</p>
+            <a href="#" class="info-link">Learn more...</a>
+        </section>
+        <section>
+            <h2>The Title</h2>
+            <p>Some Text goes here, some text goes here, some text goes here, some text goes here.</p>
+            <img class="section-img" src="https://article.images.consumerreports.org/prod/content/dam/CRO%20Images%202017/Magazine-Articles/April/CR-Inline-top-picks-chevy-cruz-02-17.jpeg" alt="important graph">
+            <a href="#" class="info-link">Learn more...</a>
+        </section>
+        <section>
+            <h2>The Title</h2>
+            <img class="section-img profile" src="https://article.images.consumerreports.org/prod/content/dam/CRO%20Images%202017/Magazine-Articles/April/CR-Inline-top-picks-chevy-cruz-02-17.jpeg" />
+            <p>Some Text goes here, some text goes here, some text goes here, some text goes here.</p>
+            <a href="#" class="info-link">Learn more...</a>
+        </section>
+        <section class="bigbottom">
+            <h2>The Title</h2>
+            <p>Some Text goes here, some text goes here, some text goes here, some text goes here.</p>
+            <a class="bigbottom-link info-link" href="#" class="info-link">Learn more...</a>
+        </section>
+        <section class="bigtitle">
+            <h2 class="bigtitle-title">The Title</h2>
+            <p>Some Text goes here, some text goes here, some text goes here, some text goes here.</p>
+            <a href="#" class="info-link">Learn more...</a>
+        </section>
+        <section>
+            <h2>The Title</h2>
+            <p>Some Text goes here, some text goes here, some text goes here, some text goes here.</p>
+            <a href="#" class="info-link">Learn more...</a>
+        </section>
+
+    </main>
+
+    <footer style="height: 500px;">
+        <div id="footerWrapper">
+            Footer Stuff in Here <div id="testBox"></div>
+        </div>
+    </footer>
+
+</div><!-- End Wrapper -->
+</body>
 </html>

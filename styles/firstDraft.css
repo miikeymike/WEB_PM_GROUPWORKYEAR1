@@ -3,7 +3,7 @@ Bcs (Hons) Web Production
 Web Project Management ICA
 
 Description:
-This website is for your ICA group website product
+This website is for the ICA group website product
 
 Group Members
 Michael Watterston
@@ -11,7 +11,7 @@ Simon Dean
 Liam
 Miles
 
-gitHub: miikeymike/WEB_PM_GROUPWORKYEAR1
+gitHub: https://github.com/miikeymike/WEB_PM_GROUPWORKYEAR1.git
 
 */
 
@@ -289,4 +289,16 @@ ul.navlinks {
 
 #footerWrapper {
     height: 500px;
+}
+
+/* FOR VIDEO */
+#videoWrapper {
+    width: 100%;
+    height:80vh;
+    overflow: hidden;
+}
+#myVideo {
+    object-fit: cover; /* -- This is problematic...must change  -- */
+    width: 100%;
+    height: 100%;
 }

@@ -1,0 +1,181 @@
+/*--------------------------------------------------------------
+Bcs (Hons) Web Production
+Web Project Management ICA
+
+Description:
+This website is for the ICA group website product
+
+Group Members
+Michael Watterston
+Simon Dean
+Liam
+Miles
+
+gitHub: https://github.com/miikeymike/WEB_PM_GROUPWORKYEAR1.git
+
+----------------------------------------------------------------
+>>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 - Testing 123
+
+--------------------------------------------------------------*/
+
+
+
+/*--------------------------------------------------------------
+1.0 - Testing 123
+--------------------------------------------------------------*/
+
+body {
+    background-color: #fff;
+}
+#mediaWrapper {
+    width: 100%;
+    height:80vh;
+    overflow: hidden;
+}
+#myVideo {
+    display:initial;
+    object-fit: cover; /* -- This is problematic...must change  -- */
+    width: 100%;
+    height: 100%;
+}
+
+/*--------------------------------------------------------------
+3.0 - Logo & Navigation
+--------------------------------------------------------------*/
+.nav_Mobile {
+    display: none; /* -- Remove Desktop nav  -- */
+}
+.logoImage {
+    width: 614px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*--------------------------------------------------------------
+FROM NEW CSS GRID
+--------------------------------------------------------------*/
+
+@media (min-width: 620px) {
+    main {
+        column-count: 2;
+        column-gap: 20px;
+    }
+
+    section {
+        break-inside: avoid;
+    }
+}
+
+@media (min-width: 960px) {
+    main {
+        column-count: 3;
+    }
+    :root {
+        --blue: #34495e;
+        --green: #e74c3c;
+        --yellow: #C9C243;
+        --orange: #FFA644;
+        --red: #3498db;
+    }
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    header {
+        text-align:center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px 20px 0;
+    }
+
+    .title {
+        font-size: 2.6em;
+        text-align: center;
+        color: white;
+        margin-bottom: 20px
+    }
+
+    .figure-img {
+        display: block;
+        width: 100%;
+        object: fit;
+    }
+
+    h2 {
+        font-size: 1.4em;
+        padding: 10px;
+    }
+
+    p {
+        margin-bottom: 1em;
+        padding: 0 10px;
+    }
+
+    .info-link {
+        text-decoration: none;
+        color: var(--green);
+        padding: 10px;
+        display: block;
+    }
+
+    .options {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 10px;
+        border-top: 3px solid var(--red);
+        border-radius: 3px;
+        background-color: white;
+    }
+
+    .options-link {
+        text-decoration: none;
+        font-size: 0.9em;
+        color: var(--red);
+    }
+
+    section {
+        border-top: 3px solid var(--red);
+        border-radius: 3px;
+        background-color: white;
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+
+    .section-img {
+        display: block;
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+    .bigtitle {
+        padding: 0;
+    }
+
+    .bigtitle-title {
+        color: white;
+        background-color: var(--red);
+        margin-bottom: 10px;
+    }
+
+    .bigbottom-link {
+        background-color: var(--green);
+        color: white;
+    }
+
+    .profile {
+        width: 80%;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+
+    @media (min-width: 620px) {
+        .options-link {
+            font-size: 1.4em;
+        }
+    }
