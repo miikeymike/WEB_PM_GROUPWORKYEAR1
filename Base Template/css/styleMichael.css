@@ -1,0 +1,26 @@
+
+#videoWrapper {
+    width: 100%;
+    height:80vh;
+    overflow: hidden;
+}
+#myVideo {
+    object-fit: cover; /* -- This is problematic...must change  -- */
+    width: 100%;
+    height: 100%;
+}
+
+
+/* This makes the Menu Sticky to top. See javascript that switches class names over */
+
+/* Style the navbar */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+}

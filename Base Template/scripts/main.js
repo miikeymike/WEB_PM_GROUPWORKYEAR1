@@ -17,8 +17,8 @@
 
 // Testing to see if Javascript file link works
 
-var jsTest = "Javascript Resource Working &#10004;";
-document.getElementById("testBox").innerHTML = jsTest;
+//var jsTest = "Javascript Resource Working &#10004;";
+//document.getElementById("testBox").innerHTML = jsTest;
 
 // Sticky Menu for Index.html
 
