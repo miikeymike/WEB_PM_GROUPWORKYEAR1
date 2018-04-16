@@ -30,7 +30,6 @@
 
     <div id="videoLogo" class="videoLogo_1">
         <img class="logoText" src="images/logo.png" alt="test">
-        <h3></h3>
     </div>
 
     <div class="carSearch">
@@ -48,13 +47,14 @@
 
   <div class="site-wrapper">
 
-    <header class="masthead">
 
+    <header class="masthead" id="myTopnav">
+        <!-- header has same ID as topnav, so that the Javascript Sticky CSS can be applied to fix to top -->
         <div class="topnav" id="myTopnav">
 
             <img class="menuImg" src="images/menu_logo.png" src="#" alt="Mountain View">
             <div class="nav-wrapper">
-            <div class="quick-contact">Tel: <i class="fas fa-phone-volume"></i> 01753 525252</div>
+                <div class="quick-contact">Tel: <i class="fas fa-phone-volume"></i> 01753 525252</div><span class="extra"></span>
                 <div class="linkMenu">
                     <a href="index.html" class="active">Home</a>
                     <a href="gallery.html">Car Search</a>
@@ -67,24 +67,106 @@
             </div>
         </div>
 
+        <div class="mobileLogo">
+            <img class="logoText" src="images/logo.png" alt="test">
+
+            <div class="mobileSearch">
+                <div class="mobile-search-container">
+                    <!-- Static search bar, just links to Simons listing page whem submit is clicked -->
+                    <form class="mobile-searchForm" action="/gallery.html">
+                        <input class="mobile-searchInput" type="text" placeholder="Car Search..." name="search">
+                        <button class="mobile-searchSubmit" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+
+
 
     </header><!-- .masthead -->
 
 
     <main id="content" class="main-content">
-        <h2>Main content area</h2>
-        <p>The main content area is where the magic happens. Right now, the main content is on the left and the sidebar is on the right. If you go into the markup for this document and add <code>dir="rtl"</code> to the <code>html</code> element, the two elements will swap spaces because CSS Grid honors text direction.</p>
+
+        <div id="mobileTiles" class="tilesMain">
+
+            <div class="tilesStyle">
+                <h2>1</h2>
+                <p style="text-align: center;"><i class="fa fa-car" style="font-size: 63px;color: #929292;"></i></p>
+                <a href="#" class="info-link">Learn more...</a>
+            </div>
+            <div class="tilesStyle">
+                <h2>1</h2>
+                <p style="text-align: center;"><i class="fa fa-car" style="font-size: 63px;color: #929292;"></i></p>
+                <a href="#" class="info-link">Learn more...</a>
+            </div>
+            <div class="tilesStyle">
+                <h2>1</h2>
+                <p style="text-align: center;"><i class="fa fa-car" style="font-size: 63px;color: #929292;"></i></p>
+                <a href="#" class="info-link">Learn more...</a>
+            </div>
+            <div class="tilesStyle">
+                <h2>1</h2>
+                <p style="text-align: center;"><i class="fa fa-car" style="font-size: 63px;color: #929292;"></i></p>
+                <a href="#" class="info-link">Learn more...</a>
+            </div>
+
+
+        </div>
+
+
+
+
+        <div class="box1">
+
+            <div id="box" class="boxLeft">
+                <img id="frontImages" src="images/frontpage_car1.png" alt="test">
+            </div>
+            <div id="box" class="boxRight">
+            <h2> Compare Search</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat.</p>
+            </div>
+
+        </div>
+
+        <div class="box2">
+
+            <div id="box" class="boxLeft2">
+                <h2>Car Lisiting</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+
+            </div>
+            <div id="box" class="boxRight2">
+                <img id="frontImages" src="images/frontpage_car1.png" alt="test">
+            </div>
+
+        </div>
+
+        <div class="box3">
+
+            <div id="box" class="boxLeft">
+                <img id="frontImages" src="images/frontpage_car1.png" alt="test">
+            </div>
+            <div id="box" class="boxRight">
+                <h2>Find Us</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+            </div>
+
+        </div>
+
+
+
     </main>
 
-    <aside class="sidebar">
-        <h3>The Sidebar</h3>
-        <p>The sidebar typically contains things like:</p>
-        <ul>
-            <li>Links</li>
-            <li>Menus</li>
-            <li>Ads</li>
-        </ul>
-    </aside>
+
 
     <aside class="twin">
         This should take up half the space

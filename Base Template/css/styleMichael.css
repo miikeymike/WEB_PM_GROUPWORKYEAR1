@@ -1,9 +1,14 @@
 
-#videoWrapper {
-    width: 100%;
-    height:80vh;
-    overflow: hidden;
+main#content p {
+    font-size: 15px;
 }
+main#content h2 {
+    font-size: 23px;
+}
+div#videoWrapper {
+    display: none;
+}
+
 #myVideo {
     object-fit: cover; /* -- This is problematic...must change  -- */
     width: 100%;
@@ -32,20 +37,20 @@
     padding-top: 60px;
 }
 
-
-
 /* For Car Search */
 .carSearch {
     position: absolute;
-    top: 48%;
+    top: 51%;
     transform: translateY(-60%);
     width: 100%;
 }
-.search-container {
+.search-container,
+.mobile-search-container{
     text-align: center;
 }
 
-input.searchInput {
+input.searchInput,
+input.mobile-searchInput{
     width: 746px;
     border-radius: 9px;
     padding: 9px;
@@ -62,6 +67,15 @@ button.searchSubmit {
     font-size: 22px;
 }
 
+button.mobile-searchSubmit {
+    top: -40px;
+    position: relative;
+    float: right;
+    background-color: #fff;
+    border: 0px;
+    z-index: 1;
+    font-size: 22px;
+}
 /*****************************************
 Website Break Points
 ******************************************/
@@ -69,16 +83,107 @@ Website Break Points
 /* Desktop Responsive BreakPoint */
 /* This gets applied after the browser is larger than 480px */
 @media screen and (min-width: 480px) {
-
-    img.logoText {
-        border: 1px solid yellow;
+    .main-content {
+        grid-column: 2/8;
     }
+
+    #videoWrapper {
+        display:block !important;
+        width: 100%;
+        height:80vh;
+        overflow: hidden;
+    }
+    .mobileLogo {
+        display: none;
+    }
+    img.logoText {
+        width:100%;
+        max-width:671px;
+    }
+
+    /* For Front Page Boxes and Content */
+    .box1, .box2, .box3 {
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .box2 {
+        display: block;
+        height: 300px;
+        border-top: 1px solid #dcdcdc;
+        border-bottom: 1px solid #dcdcdc;
+
+    }
+
+    .boxLeft {
+        float: left;
+        width: 30%;
+    }
+    .boxRight {
+        width: 70%;
+        display: inline-block;
+    }
+
+    .boxLeft2 {
+        width: 50%;
+        float: left;
+    }
+    .boxRight2 {
+        width: 50%;
+        display: inline-block;
+    }
+    #frontImages {
+        width: 100%;
+    }
+    /* This turns off the mobile tiles divs */
+    .tilesMain {
+        display: none;
+    }
+
 }
 /* Tablet Responsive BreakPoint */
 /* This gets applied when the browser smaller than 600px */
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 480px) {
 
-    img.logoText {
-        border: 1px solid red;
+    .masthead {
+        height: 100% !important;
+        padding: 0px 0px 0px 0px !important;
     }
+    .mobileLogo {
+        padding: 0px 45px 0px 45px;
+    }
+    img.menuImg {
+        display: none;
+    }
+    img.logoText {
+        border: 0px solid red;
+        width: 100%;
+    }
+    .linkMenu a.active {
+        background-color: #ffffff;
+        color: #000;
+    }
+    /* This removes sticky menu position */
+    .sticky {
+        position: initial !important;
+    }
+    .mobileSearch {
+        margin-top: 20px;
+    }
+    input.mobile-searchInput {
+        width: 100%;
+        border-radius: 6px;
+        padding: 9px;
+        border: 0px;
+        -webkit-box-shadow: 0 1px 8px rgba(0,0,0,.3);
+        box-shadow: 0 1px 8px rgba(0, 0, 0, 0.75);
+    }
+    /* This is for Tiles */
+    .tilesStyle {
+        border: 1px solid #000;
+        width: 127px;
+        float: left;
+        margin: 15px 10px 0px 0px;
+    }
+
 }
