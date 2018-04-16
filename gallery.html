@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+
+	  <title>TUM - Gallery</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalizeSimon.css">
+    <link rel="stylesheet" href="css/styleSimon.css">
+    <script defer src="scripts/main.js" ></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Overlock' rel='stylesheet'>
+</head>
+
+<body>
+
+    <header class="masthead">
+
+        <div class="topnav" id="myTopnav">
+
+            <img class="menuImg" src="images/menu_logo.png" src="#" alt="Mountain View">
+            <div class="nav-wrapper">
+            <div class="quick-contact">Tel: 01753 525252</div>
+                <div class="linkMenu">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="gallery.html">Car Search</a>
+                    <a href="portfolio.html">Compare Cars</a>
+                    <a href="about.html">Promotions</a>
+                    <a href="contact.html">About</a>
+                    <a href="contact.html">Contact us</a>
+                    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction2()">&#9776;</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- .masthead -->
+    <div id="siteWrapper">
+    <div id="videoContainer">
+          <video muted="" loop="" autoplay="" preload="none">
+              <source
+                  src="video/audisplashvideo.mp4"
+                  type="video/webm">
+              <source
+                  src="video/audisplashvideo.mp4"
+                  type="video/mp4">
+          </video>
+      </div>
+          <!-- anchor tag to take you to vehicle listings -->
+      <div id="anchorContainer">
+          <a href="index.html#takeMeHere"><h3>View Vehicles</h3>
+              <h1>&#x21d3;</h1></a>
+      </div>
+          <!-- company statement -->
+      <div id="carSelector">
+
+          <p class="companyBlurb"><strong>Tees Used Motors </strong> offer a small but quality range of used vehicles
+              across all price ranges.<br>
+              You can buy with confidence as all of our vehicles come with: <br>
+              <strong>
+                  12 Months MOT<br>
+                  6 Months RAC Breakdown<br>
+                  HPI Check<br>
+              </strong>
+              Part Ex considered and vehicle delivery available. <br>
+          </p>
+          <!-- interaction opportunity for user to see specific vehicles in range , achieved with Jquery -->
+          <div class="clickDescription"> Click here to see our the best vehicles in our range.
+              <div class="carTitlehide">
+                  <a href="examplepage" class="promoAdLink">Vauxhall Astra 1.4 i Turbo 16v SRi Nav (s/s) 5dr</a>
+                  <a href="examplepage" class="promoAdLink">2011 Mercedes C Class 2.1 C200 Cdi</a>
+                  <a href="examplepage" class="promoAdLink">2011 Honda Cr-V 2.0 I-Vtec Es</a>
+              </div>
+          </div>
+
+          <!-- interaction opportunity for user to select vehicles using javascript fully operational-->
+          <div id="carSelectModule">
+
+              <select id="listSelector" title = "model select">
+                  <option value="defaultManufactuer" selected="selected">Manufacturer</option>
+                  <option value="vauxhall">Vauxhall</option>
+                  <option value="bmw">BMW</option>
+                  <option value="merc">Merc</option>
+                  <option value="honda">Honda</option>
+                  <option value="jag">Jaguar</option>
+                  <option value="renault">Renault</option>
+              </select>
+
+              <!-- interaction opportunity for user to select vehicles based on price not operational -->
+              <select name="price" title = "price select">
+                  <option value="defaultPrice" selected="selected">Price</option>
+                  <option value="lessThan1000">Less than £1,000</option>
+                  <option value="2000to3000">£1,000 to £2,000</option>
+                  <option value="2000to3000">£2,000 to £3,000</option>
+                  <option value="moreThan4000">More than £4,000</option>
+              </select>
+
+          </div>
+          <!-- destination for JS vehicle sorter output -->
+          <div class="clickReturnElement" id="target"></div>
+      </div>
+          <!-- destination for anchor tag below the video splash screen -->
+      <a id="takeMeHere"></a>
+          <!-- Grid for advertisements -->
+      <div id="gridAds">
+          <!--first advert container -->
+          <div id="vauxhall" class="childDiv">
+              <h2 class="carTitle">Vauxhall Astra 1.4 i Turbo 16v SRi Nav</h2>
+              <div class="addBox1"><img class="carAdImg" src="img/vauxall.jpg" alt = "image of vauxhall"/></div>
+              <ul class=carSpecListR>
+                  <li>Up To 54.5MPG</li>
+                  <li>Apple Car Play</li>
+                  <li>21,998 miles from new</li>
+                  <li>Manual</li>
+                  <li>122 bhp</li>
+                  <li>Petrol</li>
+              </ul>
+              <p class="carPrice">Only £8,799</p>
+              <button type="button" class="adButtonleft">View Vehicle</button>
+          </div>
+          <!--second advert container -->
+          <div id="bmw" class="childDiv">
+              <h1 class="carTitle">2011 Bmw 3 Series 2.0 318I M Sport 5dr</h1>
+              <ul class=carSpecListL>
+                  <li>Up To 32.8MPG</li>
+                  <li>Aircon</li>
+                  <li>10,553 miles from new</li>
+                  <li>Full leather interior</li>
+                  <li>208 bhp</li>
+                  <li>Petrol</li>
+              </ul>
+              <div class="addBox2">
+                  <img class="carAdImgRight" src="img/bmw.jpg" alt = "image of BMW"/>
+              </div>
+              <p class="carPrice">Only £13,499</p>
+              <button type="button" class="adButtonleft">View Vehicle</button>
+          </div>
+          <!--third advert container -->
+          <div id="merc" class="childDiv">
+              <h1 class="carTitle">2011 Mercedes C Class 2.1 C200 Cdi</h1>
+              <div class="addBox1"><img class="carAdImg" src="img/merc.jpg" alt = "image of mercedes"/></div>
+              <ul class=carSpecListR>
+                  <li>Up To 43.3MPG</li>
+                  <li>Driver info system</li>
+                  <li>42,474 miles from new</li>
+                  <li>Automatic</li>
+                  <li>148bhp</li>
+                  <li>Diesel</li>
+              </ul>
+              <p class="carPrice">Only £11,299</p>
+              <button type="button" class="adButtonleft">View Vehicle</button>
+          </div>
+          <!--fourth advert container -->
+          <div id="honda" class="childDiv">
+              <h1 class="carTitle">2011 Honda Cr-V 2.0 I-Vtec Es</h1>
+              <ul class=carSpecListL>
+                  <li>Up To 34.2MPG</li>
+                  <li>IMMOBILSER</li>
+                  <li>76,377 miles from new</li>
+                  <li>Manual</li>
+                  <li>149bhp</li>
+                  <li>Petrol</li>
+              </ul>
+              <div class="addBox2">
+                  <img class="carAdImgRight" src="img/honda.jpg" alt = "image of honda"/>
+              </div>
+              <p class="carPrice">Only £8,299</p>
+              <button type="button" class="adButtonleft">View Vehicle</button>
+          </div>
+          <!--fifth advert container -->
+          <div id="jag" class="childDiv">
+              <h1 class="carTitle">2008 Jaguar Xf 2.7 V6 Premium Luxury</h1>
+              <div class="addBox1"><img class="carAdImg" src="img/jag.jpg" alt = "image of honda"/></div>
+              <ul class=carSpecListR>
+                  <li>Up To 37.7MPG</li>
+                  <li>Climate Control</li>
+                  <li>34,474 miles from new</li>
+                  <li>Manual</li>
+                  <li>204bhp</li>
+                  <li>Petrol</li>
+              </ul>
+              <p class="carPrice">Only £7,995</p>
+              <button type="button" class="adButtonleft">View Vehicle</button>
+          </div>
+          <!--six advert container -->
+          <div id="renault" class="childDiv">
+              <h1 class="carTitle">Renault Clio 0.9 Dynamique S Medianav Tce</h1>
+              <ul class=carSpecListL>
+                  <li>Up To 62.8MPG</li>
+                  <li>Media Nav</li>
+                  <li>21,998 miles from new</li>
+                  <li>Automatic</li>
+                  <li>90bhp</li>
+                  <li>Petrol</li>
+              </ul>
+              <div class="addBox2 childDiv">
+                  <img class="carAdImgRight" src="img/renault.jpg" alt = "image of honda"/>
+              </div>
+              <p class="carPrice">Only £6,995</p>
+              <button type="button" class="adButtonleft">View Vehicle</button>
+          </div>
+      </div>
+  </div>
+
+
+    <footer class="colophon grid">
+        <p class="footer-info">© 2018 Teesside University & Web Production Students</p>
+        <span class="socialmedia"><i class="fab fa-facebook-square fa-2x"></i> <i class="fab fa-instagram fa-2x"></i> <i class="fab fa-twitter-square fa-2x"></i>
+        </span>
+    </footer>
+
+</body>
+<script src="js/jQuery.js"></script>
+<script src="js/vendor/modernizr-3.5.0.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/main.js"></script>
+</html>
