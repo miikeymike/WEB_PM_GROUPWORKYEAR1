@@ -32,9 +32,21 @@
         <img class="logoText" src="images/logo.png" alt="test">
         <h3></h3>
     </div>
+
+    <div class="carSearch">
+        <div class="search-container">
+            <!-- Static search bar, just links to Simons listing page whem submit is clicked -->
+            <form class="searchForm" action="/gallery.html">
+                <input class="searchInput" type="text" placeholder="Car Search..." name="search">
+                <button class="searchSubmit" type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+
+    </div>
+
 </div>
 
-  <div class="site">
+  <div class="site-wrapper">
 
     <header class="masthead">
 
@@ -42,7 +54,7 @@
 
             <img class="menuImg" src="images/menu_logo.png" src="#" alt="Mountain View">
             <div class="nav-wrapper">
-            <div class="quick-contact">Tel: 01753 525252</div>
+            <div class="quick-contact">Tel: <i class="fas fa-phone-volume"></i> 01753 525252</div>
                 <div class="linkMenu">
                     <a href="index.html" class="active">Home</a>
                     <a href="gallery.html">Car Search</a>

@@ -10,6 +10,13 @@
     height: 100%;
 }
 
+.videoLogo_1{                /*temporary remove*/
+    position: absolute;
+    top: 35%;
+    transform: translateY(-60%);
+    width: 100%;
+    text-align: center;
+}
 
 /* This makes the Menu Sticky to top. See javascript that switches class names over */
 
@@ -23,4 +30,55 @@
 
 .sticky + .content {
     padding-top: 60px;
+}
+
+
+
+/* For Car Search */
+.carSearch {
+    position: absolute;
+    top: 48%;
+    transform: translateY(-60%);
+    width: 100%;
+}
+.search-container {
+    text-align: center;
+}
+
+input.searchInput {
+    width: 746px;
+    border-radius: 9px;
+    padding: 9px;
+    border: 0px;
+    -webkit-box-shadow: 0 1px 8px rgba(0,0,0,.3);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.75);
+}
+
+button.searchSubmit {
+    margin-left: -49px;
+    background-color: #fff;
+    border: 0px;
+    z-index: 1;
+    font-size: 22px;
+}
+
+/*****************************************
+Website Break Points
+******************************************/
+
+/* Desktop Responsive BreakPoint */
+/* This gets applied after the browser is larger than 480px */
+@media screen and (min-width: 480px) {
+
+    img.logoText {
+        border: 1px solid yellow;
+    }
+}
+/* Tablet Responsive BreakPoint */
+/* This gets applied when the browser smaller than 600px */
+@media screen and (min-width: 1024px) {
+
+    img.logoText {
+        border: 1px solid red;
+    }
 }

@@ -46,7 +46,7 @@ p {
 /*--------------------------------------------------------------
 General styles
 --------------------------------------------------------------*/
-.site {
+.site-wrapper {
 	background: #ededed;
 	min-height: 100vh;
 }
@@ -107,6 +107,10 @@ General styles
 /*--------------------------------------------------------------
 Navigation
 --------------------------------------------------------------*/
+img.menuImg {
+	margin: 7px 0px 0px 7px;
+}
+
 .nav-wrapper {
 	float: right;
 	padding: 0px 20px 0px 0px;
@@ -215,7 +219,7 @@ span.socialmedia {
 If no grid support, limit width to 50em and center align
 --------------------------------------------------------------*/
 @supports not (display: grid) {
-	.site {
+	.site-wrapper {
 		max-width: 50em;
 		margin: 0 auto;
 	}
@@ -225,10 +229,14 @@ If no grid support, limit width to 50em and center align
 CSS Grid layout for wider screens, when browser supports grid:
 --------------------------------------------------------------*/
 
-@media screen and (min-width: 600px) {
+/* Desktop Responsive BreakPoint */
+/* This gets applied after the browser is larger than 480px */
+
+@media screen and (min-width: 480px) {
+
 	@supports (display: grid) {
 
-		.site {
+		.site-wrapper {
 			display: grid;
 			grid-template-columns: 1fr repeat(6, minmax(auto, 10em)) 1fr;
 			grid-template-rows: minmax(1em, auto) 1fr auto minmax(1em, auto);
