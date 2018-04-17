@@ -1,16 +1,57 @@
+/*
+ Description:
+ This website is for the ICA group website product
+ Individual 60%
 
-#videoWrapper {
-    width: 100%;
-    height:80vh;
-    overflow: hidden;
+ Coded by: Michael Watterston T7169253
+
+ Group Members
+ Michael Watterston
+ Simon Dean
+ Liam
+ Miles
+
+ gitHub: https://github.com/miikeymike/WEB_PM_GROUPWORKYEAR1.git
+*/
+
+
+main#content p {
+    font-size: 15px;
 }
+main#content h2 {
+  font-size: 23px;
+  padding: 0px;
+}
+
+.contentButton {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 9px 34px 9px 34px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin: 22px 2px;
+    cursor: pointer;
+}
+.btnfloatRight {
+
+/*--------------------------------------------------------------
+Video Background
+--------------------------------------------------------------*/
+}
+div#videoWrapper {
+    display: none;
+}
+
 #myVideo {
-    object-fit: cover; /* -- This is problematic...must change  -- */
+    object-fit: cover; /* -- This is problematic...must change :(  -- */
     width: 100%;
     height: 100%;
 }
 
-.videoLogo_1{                /*temporary remove*/
+.videoLogo_1 {                /*temporary remove*/
     position: absolute;
     top: 35%;
     transform: translateY(-60%);
@@ -18,10 +59,12 @@
     text-align: center;
 }
 
-/* This makes the Menu Sticky to top. See javascript that switches class names over */
+/* This makes the Menu Sticky to top. See javascript main.js at line
+   30 for function myFunction()....switches class names over */
 
-/* Style the navbar */
-
+/*--------------------------------------------------------------
+Sticky Menu
+--------------------------------------------------------------*/
 .sticky {
     position: fixed;
     top: 0;
@@ -32,20 +75,17 @@
     padding-top: 60px;
 }
 
+/*--------------------------------------------------------------
+Car Search Bar
+--------------------------------------------------------------*/
 
-
-/* For Car Search */
-.carSearch {
-    position: absolute;
-    top: 48%;
-    transform: translateY(-60%);
-    width: 100%;
-}
-.search-container {
+.search-container,
+.mobile-search-container {
     text-align: center;
 }
 
-input.searchInput {
+input.searchInput,
+input.mobile-searchInput {
     width: 746px;
     border-radius: 9px;
     padding: 9px;
@@ -62,23 +102,300 @@ button.searchSubmit {
     font-size: 22px;
 }
 
-/*****************************************
-Website Break Points
-******************************************/
-
-/* Desktop Responsive BreakPoint */
-/* This gets applied after the browser is larger than 480px */
-@media screen and (min-width: 480px) {
-
-    img.logoText {
-        border: 1px solid yellow;
-    }
+button.mobile-searchSubmit {
+    top: -40px;
+    position: relative;
+    float: right;
+    background-color: #fff;
+    border: 0px;
+    z-index: 1;
+    font-size: 22px;
 }
-/* Tablet Responsive BreakPoint */
-/* This gets applied when the browser smaller than 600px */
-@media screen and (min-width: 1024px) {
 
-    img.logoText {
-        border: 1px solid red;
-    }
+/*--------------------------------------------------------------
+CSS Grid Boxes and images
+--------------------------------------------------------------*/
+/* Images in content boxes */
+.frontImages {
+    width: 100%;
+  }
+
+/* For Front Page Boxes and Content */
+.box1, .box2, .box3 {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 230px;
+
+  display: flex;
+  align-items: center;
 }
+
+.box2 {
+  display: flex;
+  min-height: 300px;
+  border-top: 1px solid #dcdcdc;
+  border-bottom: 1px solid #dcdcdc;
+  padding-top: 60px;
+}
+.box3 {
+  padding-top: 60px;
+}
+.boxLeft {
+    float: left;
+    width: 30%;
+}
+.boxRight {
+    width: 70%;
+    display: inline-block;
+}
+
+.boxLeft2 {
+    width: 50%;
+    float: left;
+}
+.boxRight2 {
+    width: 50%;
+    display: inline-block;
+}
+
+
+/*=============================================================================
+WEBSITE BREAK POINTS
+
+Mobile is from 0 to 600px
+Tablet is from 600px to 992px
+Desktop is from 992 to 1800+
+
+
+===============================================================================
+BREAK POINT 1 OF 6
+
+  Mobile Only Responsive BreakPoint
+  This gets applied when the browser is smaller than 600px
+===============================================================================*/
+
+@media screen and (max-width: 600px) {
+
+    .masthead {
+        height: 100% !important;
+        padding: 0px 0px 0px 0px !important;
+    }
+    .mobileLogo {
+        padding: 0px 45px 0px 45px;
+    }
+    img.menuImg {
+        display: none;
+    }
+    img.logoText {
+        border: 0px dashed black;
+        width: 100%;
+    }
+    .linkMenu a.active {
+        background-color: #ffffff;
+        color: #000;
+    }
+    /* This removes sticky menu position */
+    .sticky {
+        position: initial !important;
+    }
+    .mobileSearch {
+        margin-top: 20px;
+    }
+    input.mobile-searchInput {
+        width: 100%;
+        border-radius: 6px;
+        padding: 9px;
+        border: 0px;
+        -webkit-box-shadow: 0 1px 8px rgba(0,0,0,.3);
+        box-shadow: 0 1px 8px rgba(0, 0, 0, 0.75);
+    }
+    p.desktopContentText {
+        display: none;
+    }
+    /* This is for Tiles */
+    .tilesMain {
+      display: inline-block;
+      padding-left: 12%;
+      padding-bottom: 47px;
+      margin-bottom: 41px;
+      border-bottom: 1px solid #dcdcdc;
+    }
+    .tileImg {
+      width: 76%;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 15px;
+  }
+    .tilesStyle {
+      border: 1px solid #848383;
+      width: 42%;
+      float: left;
+      margin: 12px 5% 8px 0px;
+      -webkit-box-shadow: 0 1px 8px rgba(0,0,0,.3);
+      box-shadow: 0 1px 8px rgba(43, 43, 43, 0.25);
+    }
+
+  a.tilesStyle {
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      font-size: 3.5vw;
+      text-align: center;
+      padding-bottom: 11px;
+  }
+    a.tilesStyle:hover {
+      -webkit-box-shadow: 0 1px 8px rgba(0,0,0,.3);
+      box-shadow: 0 1px 8px rgba(12, 12, 12, 0.75);
+      border: 1px solid #ffffff;
+  }
+  .box2,
+  .box3 {
+      padding-top: 15px;
+  }
+
+}
+
+/* ===============================================================================
+BREAK POINT 2 OF 6
+
+  Mobile Quick Fix BreakPoint
+  Removes tile content images for better aesthetics
+  This gets applied when the browser is smaller than 400px
+==============================================================================*/
+@media only screen and (max-width: 400px) {
+
+  #bx1l,
+  #bx2r,
+  #bx3l {
+      display: none;
+  }
+  #bx1r,
+  #bx2l,
+  #bx3r {
+      width: 100%;
+  }
+  .box2 {
+      display: flex;
+      min-height: 250px;
+      padding-top: 0px;
+  }
+  .box3 {
+      padding-top: 0px;
+      min-height: 209px;
+  }
+}
+/*==============================================================================
+BREAK POINT 3 OF 6
+
+  Tablet Only Responsive BreakPoint
+  This gets applied when the browser is larger than 600px
+==============================================================================*/
+@media only screen and (min-width: 600px) {
+
+  .carSearch {
+    position: absolute;
+    top: 57%;
+    transform: translateY(-56%);
+    width: 100%;
+  }
+  form.searchForm {
+    width: 88%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  input.searchInput  {
+      width: 94%;
+  }
+  .logoText {
+      border: 0px solid pink;
+      width:74%;
+      max-width:671px;
+  }
+
+}
+
+/*=============================================================================
+BREAK POINT 4 OF 6
+
+Global Responsive BreakPoint when passed Mobile width after 600px
+   These styles are used for CSS Grid to work for tablet & Desktop.
+   This gets applied after the browser is larger than 600px
+==============================================================================*/
+
+@media only screen and (min-width: 600px) {
+
+    .main-content {
+        grid-column: 2/8;
+        padding-top: 71px;
+
+    }
+
+    #videoWrapper {
+        display:block !important;
+        width: 100%;
+        height:80vh;
+        overflow: hidden;
+    }
+    .mobileLogo {
+        display: none;
+    }
+    .mobileContentText {
+        display: none;
+    }
+    .desktopContentText {
+        display: initial;
+    }
+    /* This turns off the mobile tiles divs */
+    .tilesMain {
+        display: none;
+    }
+
+}
+
+/*==============================================================================
+BREAK POINT 5 OF 6
+
+Fixing video background spacing issues bewteen Mobile 600px and 800px
+Adjusts to make the Video, Image Logo, and Search bar for in proportion
+==============================================================================*/
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+
+  #videoWrapper {
+      display: block;
+      width: 100%;
+      height: 70vh;
+      overflow: hidden;
+      }
+
+  .carSearch {
+    position: absolute;
+    top: 53%;
+    transform: translateY(-53%);
+    width: 100%;
+      }
+}
+/*==============================================================================
+BREAK POINT 6 OF 6
+
+Desktop Only Responsive BreakPoint - 992px
+This gets applied when the browser larger than 992px
+==============================================================================*/
+@media only screen and (min-width: 992px) {
+
+  img.logoText {
+      border: 0px solid #fff;
+      width:100%;
+      max-width:671px;
+  }
+
+
+}
+
+/*==============================================================================
+END BREAK POINTS CSS :)
+==============================================================================*/
