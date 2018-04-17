@@ -27,3 +27,12 @@ function populateContainer() {
     //Append target onto target node.
     target.appendChild(document.getElementById(str));
 }
+
+function myFunction2() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+};

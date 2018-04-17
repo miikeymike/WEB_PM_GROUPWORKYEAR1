@@ -429,7 +429,6 @@ color: #0060a7;
 
 
 .sticky {
-  position: fixed;
   top: 0;
   width:100%;
 }
@@ -443,7 +442,7 @@ color: #0060a7;
 }
 
 .videoContainer{
-  display: flex;
+  display: inline-block;
   align-items: center;
   justify-content: center;
 }
@@ -570,14 +569,14 @@ nav {
 
 @media screen and (min-width: 1000px) {
 
-        #siteWrapper {
-            width: 80%;
-            margin: 0 auto;
-            font-size: 1.1em;
+    #siteWrapper {
+      width: 80%;
+      margin: 0 auto;
+      font-size: 1.1em;
         }
 
     #gridAds {
-        font-size: 1.1em;
+      font-size: 1.1em;
     }
     a {
       font-size: 1.2em;
