@@ -142,6 +142,11 @@ margin: 0 auto;
     border:1px solid #0060a7;
 }
 
+#siteWrapper{
+  display:block;
+  position: relative;
+}
+
 #tableContainer {
     width: 30%;
 }
