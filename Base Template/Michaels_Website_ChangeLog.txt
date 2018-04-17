@@ -1,0 +1,45 @@
+/*--------------------------------------------------------------
+WEb Project Managemnt Changelog
+Michael Watterston T7169253
+
+CHANGLOG
+
+This document shows the gradual changes made to the website as it
+improves throughtout my ICA
+
+----------------------------------------------------------------
+27th Tuesday March 2018
+----------------------------------------------------------------
+
+First index.html loaded onto gitHub 
+
+Added first draft of sticky menu 
+Added styles/firstdraft.css 
+Added scripts/main.js 
+
+Change nabar to lists 
+
+----------------------------------------------------------------
+27th Tuesday March 2018
+----------------------------------------------------------------
+
+Re-wrote the website code to better handle mobile first approach with 
+splitting the CSS into Mobile/Tablet/Desktop.css
+
+Also better html/css for the Video Background. 
+
++ Added mobile.css 
++ Added tablet.css 
++ Added desktop.css 
+
++ Added font awesome resource
+
+----------------------------------------------------------------
+3rd Tuesday April 2018
+----------------------------------------------------------------
+
+I've made a column layout, when it should be CSS grid. I need to
+re-make the website. God dammit. 
+
+
+
