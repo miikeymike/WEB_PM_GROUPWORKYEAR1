@@ -1,9 +1,10 @@
+/**
+ * Created by t7169253 on 27/03/2018.
+ */
+
 /*
  Description:
  This website is for the ICA group website product
- Individual 60%
-
- Coded by: Michael Watterston T7169253
 
  Group Members
  Michael Watterston
@@ -19,21 +20,12 @@
 //var jsTest = "Javascript Resource Working &#10004;";
 //document.getElementById("testBox").innerHTML = jsTest;
 
-
 // Sticky Menu for Index.html
 
 window.onscroll = function() {myFunction()};
 
-var navbar = document.getElementById("myTopnav");
+var navbar = document.getElementById("myTopnav2");
 var sticky = navbar.offsetTop;
-
-function myFunction() {
-    if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
-    } else {
-        navbar.classList.remove("sticky");
-    }
-};
 
 // Make menu burger button
 function myFunction2() {
