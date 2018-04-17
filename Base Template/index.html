@@ -1,10 +1,27 @@
+<!--
+ Description:
+ This website is for the ICA group website product
+ Individual 60%
+
+ Coded by: Michael Watterston T7169253
+
+ Group Members
+ Michael Watterston
+ Simon Dean
+ Liam
+ Miles
+
+ gitHub: https://github.com/miikeymike/WEB_PM_GROUPWORKYEAR1.git
+ -->
+
+
 <!DOCTYPE html>
 <html lang="en" >
 
 <head>
 
     <meta charset="UTF-8">
-	<title>Bare Bones Template</title>
+	  <title>Teeside Used Cars | Home Page</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/styleMichael.css">
 
@@ -17,7 +34,7 @@
 <body>
 
 <div id="videoWrapper">
-    <!-- HTML video for now, might use Jquery BigVideo.js for better cross browser compatibilty -->
+<!-- HTML video for now, might use Jquery BigVideo.js for better cross browser compatibilty -->
 
     <video id="myVideo" autoplay muted loop >
         <source src="video/car_video1.mp4" type="video/mp4" />
@@ -25,41 +42,38 @@
 
         <img src="images/menu_logo.png" title="Your browser does not support the <video> tag">
         Your browser does not support HTML5 video.
-
     </video>
 
-    <div id="videoLogo" class="videoLogo_1">
-        <img class="logoText" src="images/logo.png" alt="test">
-    </div>
-
-    <div class="carSearch">
-        <div class="search-container">
-            <!-- Static search bar, just links to Simons listing page whem submit is clicked -->
-            <form class="searchForm" action="/gallery.html">
-                <input class="searchInput" type="text" placeholder="Car Search..." name="search">
-                <button class="searchSubmit" type="submit"><i class="fa fa-search"></i></button>
-            </form>
+    <div class="videoMedia">
+        <div id="videoLogo" class="videoLogo_1">
+            <img class="logoText" src="images/logo.png" alt="test">
         </div>
 
-    </div>
+        <div class="carSearch">
+            <div class="search-container">
+                <!-- Static search bar, just links to Simons listing page whem submit is clicked -->
+                <form class="searchForm" action="/gallery.html">
+                    <input class="searchInput" type="text" placeholder="Car Search..." name="search">
+                    <button class="searchSubmit" type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
 
+        </div>
+    </div>
 </div>
 
   <div class="site-wrapper">
-
-
     <header class="masthead" id="myTopnav">
         <!-- header has same ID as topnav, so that the Javascript Sticky CSS can be applied to fix to top -->
-        <div class="topnav" id="myTopnav">
 
+        <div class="topnav" id="myTopnav">
             <img class="menuImg" src="images/menu_logo.png" src="#" alt="Mountain View">
             <div class="nav-wrapper">
                 <div class="quick-contact">Tel: <i class="fas fa-phone-volume"></i> 01753 525252</div><span class="extra"></span>
                 <div class="linkMenu">
                     <a href="index.html" class="active">Home</a>
                     <a href="gallery.html">Car Search</a>
-                    <a href="compare.html">Compare Cars</a>
-                    <a href="promotions.html">Promotions</a>
+                    <a href="gallery.html">Compare Cars</a>
                     <a href="about.html">About</a>
                     <a href="contact.html">Contact us</a>
                     <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction2()">&#9776;</a>
@@ -67,8 +81,9 @@
             </div>
         </div>
 
+        <!-- Mobile Breakpoint; Its for the big logo and search bar -->
         <div class="mobileLogo">
-            <img class="logoText" src="images/logo.png" alt="test">
+            <img class="logoText" src="images/mobileLogo.png" alt="test">
 
             <div class="mobileSearch">
                 <div class="mobile-search-container">
@@ -85,79 +100,74 @@
 
 
 
-    </header><!-- .masthead -->
-
+    </header>
 
     <main id="content" class="main-content">
 
+        <!-- Mobile Breakpoint; this creates the tile boxes for quick links -->
         <div id="mobileTiles" class="tilesMain">
 
-            <div class="tilesStyle">
-                <h2>1</h2>
-                <p style="text-align: center;"><i class="fa fa-car" style="font-size: 63px;color: #929292;"></i></p>
-                <a href="#" class="info-link">Learn more...</a>
-            </div>
-            <div class="tilesStyle">
-                <h2>1</h2>
-                <p style="text-align: center;"><i class="fa fa-car" style="font-size: 63px;color: #929292;"></i></p>
-                <a href="#" class="info-link">Learn more...</a>
-            </div>
-            <div class="tilesStyle">
-                <h2>1</h2>
-                <p style="text-align: center;"><i class="fa fa-car" style="font-size: 63px;color: #929292;"></i></p>
-                <a href="#" class="info-link">Learn more...</a>
-            </div>
-            <div class="tilesStyle">
-                <h2>1</h2>
-                <p style="text-align: center;"><i class="fa fa-car" style="font-size: 63px;color: #929292;"></i></p>
-                <a href="#" class="info-link">Learn more...</a>
-            </div>
+            <a class="tilesStyle" href="#">
+                <img class="frontImages tileImg" src="images/tile-buy-car1.png" alt="car compare">Buy a Car
+            </a>
+            <a class="tilesStyle" href="#">
+                  <img class="frontImages tileImg" src="images/tile-sell-car1.png" alt="car compare">Sell a Car
+            </a>
+            <a class="tilesStyle" href="#">
+                  <img class="frontImages tileImg" src="images/tile-compare-car1.png" alt="car compare">Compare
+            </a>
+            <a class="tilesStyle" href="#">
+                  <img class="frontImages tileImg" src="images/tile-call-us.png" alt="car compare">Call Us
+            </a>
 
 
         </div>
 
-
-
-
+        <!-- Start Content Boxes -->
         <div class="box1">
-
-            <div id="box" class="boxLeft">
-                <img id="frontImages" src="images/frontpage_car1.png" alt="test">
+            <div id="bx1l" class="box boxLeft">
+                <img class="frontImages" src="images/frontpage_car1.png" alt="car compare">
             </div>
-            <div id="box" class="boxRight">
-            <h2> Compare Search</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat.</p>
+            <div id="bx1r" class="box boxRight">
+              <h2> Compare Search</h2>
+              <p class="mobileContentText">Compare cars side by side with our innovative search comparsion tools. A little tool
+                to help make a smart decision.
+              </p>
+              <p class="desktopContentText">Compare cars side by side with our innovative search comparsion tools. Simply search for your two favourite cars and add them
+                to the compare basket, then press compare and we'll show you a breakdown of the cars specification and price. A little tool
+                to help make a smart decision.
+              </p>
+              <button class="contentButton btnfloatLeft">Start Compare</button>
             </div>
-
         </div>
 
         <div class="box2">
-
-            <div id="box" class="boxLeft2">
+            <div id="bx2l" class="box boxLeft2">
                 <h2>Car Lisiting</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.</p>
-
-            </div>
-            <div id="box" class="boxRight2">
-                <img id="frontImages" src="images/frontpage_car1.png" alt="test">
+                <p class="mobileContentText">Teesside Used Motors stock and sell a wide range of vehicles. Browse our car lisitings</p>
+                <p class="desktopContentText">Teesside Used Motors stock and sell a wide range of vehicles. Browse our car lisitings by price, manufacturer, colour and much mobile-search-container
+                   and find your perfect car. Best of all, our vehicles come with a 3 year warranty.
+                </p>
+                <button class="contentButton btnfloatRight">View Listings</button>
             </div>
 
+            <div id="bx2r" class=" box boxRight2">
+                <img class="frontImages" src="images/frontpage_car2.png" alt="Car Listing">
+            </div>
         </div>
 
         <div class="box3">
 
-            <div id="box" class="boxLeft">
-                <img id="frontImages" src="images/frontpage_car1.png" alt="test">
+            <div id="bx3l" class="box boxLeft">
+                <img class="frontImages" src="images/frontpage_map1.png" alt="Find us">
             </div>
-            <div id="box" class="boxRight">
+            <div id="bx3r" class="box boxRight">
                 <h2>Find Us</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.</p>
+                <p class="mobileContentText">Teesside Used Motors, Southfield Rd, Middlesbrough TS1 3BX</p>
+                <p class="desktopContentText">Teesside Used motors are located in the heart of Tees Valley. Find our offices at Middlesbrough Teesside.
+                  Southfield Rd, Middlesbrough TS1 3BX
+                </p>
+                <button class="contentButton btnfloatLeft">View Map & Address</button>
             </div>
 
         </div>
@@ -166,24 +176,15 @@
 
     </main>
 
-
-
-    <aside class="twin">
-        This should take up half the space
-    </aside>
-    <aside class="twin">
-        This should take up the other half of the space
-    </aside>
-
-    <footer class="colophon grid" style="margin-bottom: 1300px">
+    <footer class="colophon grid">
         <p class="footer-info">© 2018 Teesside University & Web Production Students</p>
         <span class="socialmedia"><i class="fab fa-facebook-square fa-2x"></i> <i class="fab fa-instagram fa-2x"></i> <i class="fab fa-twitter-square fa-2x"></i>
         </span>
     </footer>
 
 </div>
-  
-  
+
+
 
 </body>
 

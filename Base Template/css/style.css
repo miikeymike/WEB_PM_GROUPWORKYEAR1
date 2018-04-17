@@ -1,7 +1,18 @@
-/* NOTE:
- * Grid layout stuff starts at line 138. 
- * The stuff before is just boring old CSS to make content look not crappy.
- */
+/*
+ Description:
+ This website is for the ICA group website product
+ Individual 60%
+
+ Coded by: Michael Watterston T7169253
+
+ Group Members
+ Michael Watterston
+ Simon Dean
+ Liam
+ Miles
+
+ gitHub: https://github.com/miikeymike/WEB_PM_GROUPWORKYEAR1.git
+*/
 
 /*--------------------------------------------------------------
 CSS Reset
@@ -18,7 +29,7 @@ body {
 
 
 /*--------------------------------------------------------------
-Typography
+Typography and Stuff like that
 --------------------------------------------------------------*/
 body,
 button,
@@ -65,7 +76,7 @@ General styles
 .masthead {
 	background: #fff;
 	height: 95px;
-	padding: 15px 0px 0px 0px;
+  padding: 15px 0px 0px 0px;
 	color: 000;
 	-webkit-box-shadow: 0 1px 8px rgba(0,0,0,.3);
 	box-shadow: 0 1px 8px rgba(0,0,0,.3);
@@ -108,7 +119,7 @@ General styles
 Navigation
 --------------------------------------------------------------*/
 img.menuImg {
-	margin: 7px 0px 0px 7px;
+	margin: 7px 0px 0px 30px;
 }
 
 .nav-wrapper {
@@ -242,7 +253,7 @@ CSS Grid layout for wider screens, when browser supports grid:
 /* Desktop Responsive BreakPoint */
 /* This gets applied after the browser is larger than 480px */
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 600px) {
 
 	@supports (display: grid) {
 
